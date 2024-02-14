@@ -5,8 +5,10 @@ import contactRoutes from './routes/contactRoutes';
 const app = express();
 const PORT = 3000;
 
+const allowedOrigins = ['http://localhost:4200', 'https://contact-2b213.web.app'];
+
 app.use(cors({
-  origin: 'http://localhost:4200',
+  origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
