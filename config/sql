@@ -1,6 +1,6 @@
-CREATE DATABASE contact
-
-CREATE TABLE IF NOT EXISTS contacts (
+CREATE database contact
+use contact
+CREATE TABLE IF NOT EXISTS Contacts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
